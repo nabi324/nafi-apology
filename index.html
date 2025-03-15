@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sorry Nafi! 🐾</title>
+    <style>
+        /* ALL OTHER STYLES REMAIN THE SAME */
+        body {
+            font-family: 'Comic Sans MS', cursive;
+            background-color: #ffe6f2;
+            text-align: center;
+        }
+        /* CHANGED BUTTON POSITIONING */
+        button {
+            padding: 15px 30px;
+            font-size: 20px;
+            background-color: #ff85a2;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            margin: 30px auto; /* Centered with top margin */
+            display: block;
+            position: relative;
+        }
+        /* EVERYTHING ELSE BELOW REMAINS UNCHANGED */
+        #card {
+            display: none;
+            margin: 20px;
+        }
+        .cats {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px;
+        }
+        .cat-img {
+            width: 200px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+        #sorry {
+            font-size: 48px;
+            color: #ff4466;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            margin: 20px;
+        }
+        #letter {
+            display: none;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Only button position changed -->
+    <button onclick="openCard()">Click here Nafi! 🐾</button>
+
+    <!-- Everything below remains exactly the same -->
+    <div id="card">
+        <h1 id="sorry">I'M SORRY! 😿</h1>
+        
+        <div class="cats">
+            <img src="https://i.pinimg.com/736x/41/76/4c/41764ce16ebb6d92a96cd67097768227.jpg" alt="Cute cat" class="cat-img">
+            <img src="https://i.pinimg.com/736x/65/b7/75/65b775db77c9937e88c75cffc36e5620.jpg" alt="Silly cat" class="cat-img">
+            <img src="https://i.pinimg.com/736x/a8/7f/9a/a87f9abc235ed1b2d3c16fbd1a801209.jpg" alt="Apology cat" class="cat-img">
+        </div>
+
+        <div id="letter">
+            <h2>Dear Nafi,</h2>
+            <p>I know I messed up, and I’m really, truly sorry. 😔 You mean the world to me, and I hate the thought of making you upset. Even the silliest of cats, with all their dramatic mood swings and ignoring-humans attitude, don’t compare to how much I care about you!</p>
+            <p>Please forgive me for disappearing like a cat who found a really interesting box. I promise to be more thoughtful and communicate better (even if my brain sometimes decides to go into "just a girl" mode). You're my favorite person, and I want to make things right 💖
+            </p>
+            <p>With all my love and kitten cuddles,</p>
+            <p>Your slightly defective but loving gf 😿💕 </p>
+        </div>
+    </div>
+
+    <script>
+        function openCard() {
+            document.querySelector('button').style.display = 'none';
+            document.getElementById('card').style.display = 'block';
+            setTimeout(() => {
+                document.getElementById('letter').style.display = 'block';
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
